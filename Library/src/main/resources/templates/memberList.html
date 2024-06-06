@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Daftar Anggota</title>
+</head>
+<body>
+<h1>Daftar Anggota</h1>
+<table>
+    <tr>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>Nomor ID</th>
+        <th>Alamat</th>
+        <th>Telepon</th>
+    </tr>
+    <tr th:each="member : ${members}">
+        <td th:text="${member.name}"></td>
+        <td th:text="${member.email}"></td>
+        <td th:text="${member.idNumber}"></td>
+        <td th:text="${member.address}"></td>
+        <td th:text="${member.phone}"></td>
+    </tr>
+</table>
+</body>
+</html>
