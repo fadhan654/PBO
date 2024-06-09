@@ -1,0 +1,9 @@
+com\example\libraryweb\service\MemberService.class
+com\example\libraryweb\entity\Member.class
+com\example\libraryweb\repository\BookRepository.class
+com\example\libraryweb\controller\BookController.class
+com\example\libraryweb\entity\Book.class
+com\example\libraryweb\controller\MemberController.class
+com\example\libraryweb\LibraryWebApplication.class
+com\example\libraryweb\repository\MemberRepository.class
+com\example\libraryweb\service\BookService.class
