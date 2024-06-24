@@ -1,0 +1,5 @@
+com\example\bank_app\BankAppApplication.class
+com\example\bank_app\entity\Account.class
+com\example\bank_app\repository\AccountRepository.class
+com\example\bank_app\service\AccountService.class
+com\example\bank_app\controller\AccountController.class

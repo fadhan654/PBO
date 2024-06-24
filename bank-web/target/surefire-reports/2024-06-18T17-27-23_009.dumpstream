@@ -1,0 +1,4 @@
+# Created at 2024-06-18T17:27:25.256
+Boot Manifest-JAR contains absolute paths in classpath 'E:\fadhlan\bank-app\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

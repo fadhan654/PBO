@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Accounts</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>List of Accounts</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Account Number</th>
+                    <th>Account Name</th>
+                    <th>Balance</th>
+                    <!-- Tambah kolom untuk password -->
+                    <th>Password</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Populate table rows dynamically using Thymeleaf or other templating engine -->
+                <tr th:each="account : ${accounts}">
+                    <td th:text="${account.id}"></td>
+                    <td th:text="${account.accountNumber}"></td>
+                    <td th:text="${account.accountName}"></td>
+                    <td th:text="${account.balance}"></td>
+                    <!-- Tampilkan password -->
+                    <td th:text="${account.password}"></td>
+                    <td>
+                        <a th:href="@{/accounts/update/{id}(id=${account.id})}" class="btn btn-primary btn-sm">Edit</a>
+                        <a th:href="@{/accounts/delete/{id}(id=${account.id})}" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/accounts/add" class="btn btn-primary">Add New Account</a>
+    </div>
+</body>
+</html>
